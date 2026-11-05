@@ -1,0 +1,18 @@
+[project]
+name = "py-api-diff"
+version = "0.1.0"
+description = "What a change breaks in a Python package's public API, before you release it"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "Apache-2.0"}
+keywords = ["api", "diff", "breaking-changes", "semver", "python", "ast"]
+
+[project.scripts]
+py-api-diff = "py_api_diff:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["py_api_diff"]
